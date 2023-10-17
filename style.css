@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'New Rocker', cursive;
+}
+
+/*----------------- NAV -----------------*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    box-shadow: inset 0 0 50px 0 black;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    margin: 10px 0px 10px 30px;
+}
+
+.titulo{
+    font-size: 40px;
+    color: white;
+    align-self: center;
+}
+
+.lista{
+    display: flex;
+    margin-right: 15px;
+    margin-top: 60px;
+}
+
+.lista li{
+    margin-right: 20px;
+    list-style: none;
+    font-size: 30px;
+}
+
+.lista li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+/*----------------- BODY -----------------*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    margin-top: 40px;
+    color: black;
+}
+
+.articulos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.articulo{
+    text-align: center;
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 6px 11px 5px -3px rgba(0,0,0,0.09) ;
+}
+
+.art-img{
+    width: 150px;
+    height: 150px;
+}
+
+.descripcion{
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.precio{
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.btn-art{
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-top: 5px;
+    background-color:aliceblue;
+    width: 100px;
+    height: 50px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+/*----------------- PAGE RESEÑAS (SECTION) ------------------*/
+
+.critica{
+    display: flex;
+    margin-top: 30px;
+    height: 250px;
+    background-color: rgb(186, 186, 186);
+    box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.75);
+}
+
+.critica img{
+    width: 200px;
+    height: 200px;
+}
+
+.critica p{
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    width:60%;
+}
+
+/*----------------- PAGE CONSULTA (FORMULARIO) ----------------- */
+
+.formulario{
+    margin: 80px 0px 40px 0px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+form .text-area{
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    width: 400px;
+    height: 100px;
+}
+
+form .btn-submit{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    background-color:crimson;
+}
+
+/*----------------- FOOTER ----------------- */
+
+footer{
+    margin-top: 40px;
+    background-color: brown;
+}
+
+.footerContainer{
+    padding: 70px 30px 20px;
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: center;
+}
+
+.redesSociales a{
+    
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.redesSociales a i{
+    font-size: 32px;
+    color: brown;
+    opacity: 0,9;
+}
+
+/*----------------- redesSociales hover -----------------*/
+
+.redesSociales a:hover{
+    background-color: brown;
+    transition: 0.5s;
+}
+
+.redesSociales a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+/*----------------- FOOTER NAV -----------------*/
+
+.footerNav {
+    margin: 30px 0px;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+/*----------------- FOOTER BOTTOM -----------------*/
+
+.footerBottom{
+    background-color: brown;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.designer{
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
