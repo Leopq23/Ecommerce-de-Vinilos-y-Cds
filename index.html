@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icono.ico" type="image/x-icon">
     <title>Evil Vinyl Records - Vinilos y CD's</title>
 
     <!-- Mi hoja de estilos -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- Fuente New Rocker-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
 
-    <!-- Fuente Poppins-->
+    <!-- Fuente Bebas Neue -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <!-- Iconos de redes sociales -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <nav>
-        <img class="logo" src="./assets/logo.png" alt="logo de la tienda">
-        <h1 class="titulo">Evil Vinyl Records</h1>
+        <div class="logo">
+            <a href="#"><img src="assets/logo.png" alt="logo">Evil Vinyl Records</a>
+        </div>
 
         <ul class="lista">
             <li><a href="/"> Inicio </a></li>
@@ -38,71 +44,93 @@
     </nav>
 
     <div class="container">
-        <h2>Ofertas de la semana</h2>
 
-        <div class="articulos">
-            <div class="articulo">
-                <img class="art-img" src="./assets/Portadas Rock/gunsnroses.jpg" alt="album-guns-n-roses">
-                <p class="descripcion">Vinilo Apetite For Destruction - Guns N' Roses</p>
-                <p class="precio"> ̶$̵1̵8̵0̵0̵0̵ $12000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+        <h2> Ofertas de la semana </h2>
+
+        <div class="articulos d-flex justify-content-between">
+
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Portadas Rock/gunsnroses.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Apetite For Destruction - Guns N' Roses</h5>
+                    <p class="card-text">$̵1̵8̵0̵0̵0̵ $12000 ARS</p>
+                    <a href="#" class="btn btn-primary color: brown">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="./assets/Portadas Metal/metallica.png" alt="album-metallica">
-                <p class="descripcion">Vinilo Master Of Puppets - Metallica </p>
-                <p class="precio"> $̵1̵8̵0̵0̵0̵  $12000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Portadas Metal/metallica.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Master Of Puppets - Metallica</h5>
+                    <p class="card-text">$̵1̵8̵0̵0̵0̵  $12000 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="./assets/Portadas Punk/greenday.png" alt="album-greenday">
-                <p class="descripcion">CD American Idiot - Green Day</p>
-                <p class="precio">$̶8̶0̶0̶0̶ $5000</p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Portadas Punk/greenday.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CD American Idiot - Green Day</h5>
+                    <p class="card-text">$̶8̶0̶0̶0̶ $5000 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="./assets/Portadas Grunge/nirvana.jpg" alt="album-nirvana">
-                <p class="descripcion">CD Nevermind - Nirvana</p>
-                <p class="precio">$̶8̶5̶0̶0̶ $5500</p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Portadas Grunge/nirvana.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CD Nevermind - Nirvana</h5>
+                    <p class="card-text">$̶8̶5̶0̶0̶ $5500 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
+
         </div>
 
-        <h2>Mas Vendidos</h2>
+        <h2> Mas Vendidos </h2>
 
-        <div class="articulos">
-            <div class="articulo">
-                <img class="art-img" src="./assets/Portadas Rock/gunsnroses.jpg" alt="album-guns-n-roses">
-                <p class="descripcion">Vinilo Apetite For Destruction - Guns N' Roses</p>
-                <p class="precio"> ̶$̵1̵8̵0̵0̵0̵ $12000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+        <div class="articulos d-flex justify-content-between">
+
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Portadas Rock/gunsnroses.jpg" class="card-img-top" alt="album-guns-n-roses">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Apetite For Destruction - Guns N' Roses</h5>
+                    <p class="card-text">$̵1̵8̵0̵0̵0̵ $12000 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="./assets/Portadas Rock/thestrokes.jpeg" alt="album-the-strokes">
-                <p class="descripcion">Vinilo New Abnormal - The Strokes </p>
-                <p class="precio"> $14000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Portadas Rock/thestrokes.jpeg" class="card-img-top" alt="album-the-strokes">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo New Abnormal - The Strokes</h5>
+                    <p class="card-text">$14000 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="./assets/Portadas Rock/maneskin.jpeg" alt="album-maneskin">
-                <p class="descripcion">CD Rush! - Maneskin</p>
-                <p class="precio"> $8000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Portadas Rock/maneskin.jpeg" class="card-img-top" alt="album-maneskin">
+                <div class="card-body">
+                    <h5 class="card-title">CD Rush! - Maneskin</h5>
+                    <p class="card-text">$8000 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="./assets/Portadas Metal/ghost.jpg" alt="album-ghost">
-                <p class="descripcion">Vinilo Impera - Ghost</p>
-                <p class="precio"> $17000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/Portadas Metal/ghost.jpg" class="card-img-top" alt="album-ghost">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Impera - Ghost</h5>
+                    <p class="card-text">$17000 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
+
         </div>
+
     </div>
-   
+
     <footer>
     <div class="footerContainer">
         <div class="redesSociales">
@@ -128,5 +156,11 @@
         </div>
     </div>
     </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

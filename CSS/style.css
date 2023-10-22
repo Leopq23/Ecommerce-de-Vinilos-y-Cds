@@ -1,0 +1,375 @@
+* {
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ms-5{
+    margin-left: 10rem!important;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/*----------------- NAV -----------------*/
+
+@media (max-width:767px) {
+    nav {
+        display: flex;
+        padding: 2px 10px;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        background: rgb(197, 28, 28);
+    }
+
+    nav a {
+        color: #fff;
+    }
+
+    nav ul li a {
+        opacity: 0.5;
+    }
+
+    nav ul li a:hover {
+        opacity: 1;
+    }
+
+    ul {
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .logo a {
+        font-family: 'New Rocker', cursive;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .logo a:hover {
+        color: #fff;
+    }
+
+    .logo img {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .lista {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    .lista li {
+        padding: 10px 5px;
+        list-style: none;
+        font-size: 15px;
+    }
+
+    .lista li a {
+        font-family: 'New Rocker', cursive;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+/*---------------- MEDIA 768px ---------------*/
+
+@media(min-width:768px) {
+    nav {
+        display: flex;
+        padding: 5px 20px;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(197, 28, 28);
+    }
+
+    nav a {
+        color: #fff;
+    }
+
+    nav ul li a {
+        opacity: 0.5;
+    }
+
+    nav ul li a:hover {
+        opacity: 1;
+    }
+
+    ul {
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .logo a {
+        font-family: 'New Rocker', cursive;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .logo a:hover {
+        color: #fff;
+    }
+
+    .logo img {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+
+    .lista {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    .lista li {
+        padding: 20px 15px;
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .lista li a {
+        font-family: 'New Rocker', cursive;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+/*-------- MEDIA 1200px-----------*/
+
+@media(min-width:1200px) {
+    nav {
+        display: flex;
+        padding: 5px 70px;
+        align-items: center;
+        justify-content: space-between;
+        background: #c51c1c;
+    }
+
+    nav a {
+        color: #fff;
+    }
+
+    nav ul li a {
+        opacity: 0.5;
+    }
+
+    nav ul li a:hover {
+        opacity: 1;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .logo a {
+        font-family: 'New Rocker', cursive;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .logo a:hover {
+        color: #fff;
+    }
+
+    .logo img {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+    ul {
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .lista {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    .lista li {
+        padding: 20px 15px;
+        margin-right: 20px;
+        list-style: none;
+        font-size: 30px;
+    }
+
+    .lista li a {
+        font-family: 'New Rocker', cursive;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    /* ---------------- BODY ------------------- */
+
+    h2 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 40px;
+        color: #9a1a1a;
+        margin-top: 60px;
+    }
+
+    .btn-primary{
+        background-color: #f14242;
+        border-color: #f14242;
+    }
+
+    .btn-primary:hover{
+        background-color: #de2424;
+        border-color: #de2424;
+    }
+
+    .btn-primary:active{
+        background-color: #c51c1c;
+        border-color: #c51c1c;
+    }
+
+    .btn-primary:focus{
+        background-color: #c51c1c;
+        border-color: #c51c1c;
+    }
+}
+
+/*----------------- PAGE RESEÑAS (SECTION) ------------------*/
+
+.critica {
+    display: flex;
+    margin-top: 30px;
+    height: 250px;
+    background-color: rgb(186, 186, 186);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.critica img {
+    width: 200px;
+    height: 200px;
+}
+
+.critica p {
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    width: 60%;
+}
+
+/*----------------- PAGE CONSULTA (FORMULARIO) ----------------- */
+
+
+/*
+
+form .btn-submit {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: crimson;
+}*/
+
+/*----------------- FOOTER ----------------- */
+
+footer {
+    margin-top: 40px;
+    background-color: rgb(197, 28, 28);
+}
+
+.footerContainer {
+    padding: 70px 30px 20px;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redesSociales a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.redesSociales a i {
+    font-size: 32px;
+    color: rgb(197, 28, 28);
+    opacity: 0, 9;
+}
+
+/*----------------- redesSociales hover -----------------*/
+
+.redesSociales a:hover {
+    background-color: rgb(197, 28, 28);
+    transition: 0.5s;
+}
+
+.redesSociales a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+/*----------------- FOOTER NAV -----------------*/
+
+.footerNav {
+    margin: 30px 0px;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    font-family: 'New Rocker', cursive;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+/*----------------- FOOTER BOTTOM -----------------*/
+
+.footerBottom {
+    background-color: rgb(197, 28, 28);
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.designer {
+    font-family: 'New Rocker', cursive;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}

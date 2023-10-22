@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/icono.ico" type="image/x-icon">
     <title>Evil Vinyl Records - Vinilos y CD's</title>
+
     <!-- Mi hoja de estilos -->
-    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
 
     <!-- Fuente New Rocker-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
 
-    <!-- Fuente Poppins-->
+    <!-- Fuente Bebas Neue -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <!-- Iconos de redes sociales -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,13 +26,14 @@
 
 <body>
     <nav>
-        <img class="logo" src="/assets/logo.png" alt="logo de la tienda">
-        <h1 class="titulo"> Evil Vinyl Records </h1>
+        <div class="logo">
+            <a href="#"><img src="../assets/logo.png" alt="logo">Evil Vinyl Records</a>
+        </div>
 
         <ul class="lista">
             <li><a href="/index.html"> Inicio </a></li>
             <li><a href="./vinilos.html"> Vinilos </a></li>
-            <li><a href="/"> CDs </a></li>
+            <li><a href="#"> CDs </a></li>
             <li><a href="./resenias.html"> Reseñas </a></li>
             <li><a href="./contacto.html"> Contacto </a></li>
             <li><a href="./carrito.html">Carrito</a></li>
@@ -40,86 +44,115 @@
         <!-- CDs de Rock-->
         <h2>Rock</h2>
 
-        <div class="articulos">
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Rock/oasis.jpg" alt="album-oasis">
-                <p class="descripcion">CD Definitely Maybe - Oasis</p>
-                <p class="precio"> $7000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+        <div class="articulos d-flex justify-content-evenly">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/oasis.jpg" class="card-img-top" alt="album-oasis">
+                <div class="card-body">
+                    <h5 class="card-title">CD Definitely Maybe - Oasis</h5>
+                    <p class="card-text">$7000 ARS</p>
+                    <a href="#" class="btn btn-primary color: brown">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Rock/maneskin.jpeg" alt="album-maneskin">
-                <p class="descripcion">CD Rush! - Maneskin </p>
-                <p class="precio"> $8000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/maneskin.jpeg" class="card-img-top" alt="album-maneskin">
+                <div class="card-body">
+                    <h5 class="card-title">CD RUSH! - Maneskin</h5>
+                    <p class="card-text"> $8000 ARS </p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
+
         </div>
-        <!-- CDs de Heavy Metal-->
+
+        <!-- CD's de Heavy Metal -->
         <h2>Heavy Metal</h2>
 
-        <div class="articulos">
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Metal/systemofadown.jpeg" alt="album-system-of-a-down">
-                <p class="descripcion"> CD Toxicity - System of a Down </p>
-                <p class="precio"> $6500 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+        <div class="articulos d-flex justify-content-between">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/blacksabbath.jpg" class="card-img-top" alt="album-black-sabbath">
+                <div class="card-body">
+                    <h5 class="card-title">CD Black Sabbath - Black Sabbath</h5>
+                    <p class="card-text">$7000 ARS</p>
+                    <a href="#" class="btn btn-primary color: brown">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Metal/ironmaiden.jpg" alt="album-iron-maiden">
-                <p class="descripcion"> CD Number of the Beast - Iron Maiden </p>
-                <p class="precio"> $8000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/systemofadown.jpeg" class="card-img-top" alt="album-system-of-a-down">
+                <div class="card-body">
+                    <h5 class="card-title">CD Toxicity - System Of a Down</h5>
+                    <p class="card-text">$6500 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Metal/bringmethehorizon.jpg" alt="album-bring-me-the-horizon">
-                <p class="descripcion"> CD POST HUMAN: SURVIVAL HORROR - Bring Me The Horizon </p>
-                <p class="precio"> $6500 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/ironmaiden.jpg" class="card-img-top" alt="album-iron-maiden">
+                <div class="card-body">
+                    <h5 class="card-title">CD Number of the Beast - Iron Maiden</h5>
+                    <p class="card-text">$8000 ARS</p>
+                    <a href="#" class="btn btn-primary color: brown">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Metal/blacksabbath.jpg" alt="album-black-sabbath">
-                <p class="descripcion"> CD Paranoid - Black Sabbath </p>
-                <p class="precio"> $7000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/bringmethehorizon.jpg" class="card-img-top" alt="album-bmth">
+                <div class="card-body">
+                    <h5 class="card-title">CD POST HUMAN: SURVIVAL HORROR - Bring Me The Horizon</h5>
+                    <p class="card-text">$6500 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
         </div>
-
-        <!-- CDs de Punk -->
+        
+        <!-- CD's de Punk-->
         <h2>Punk</h2>
-        <div class="articulos">
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Punk/greenday.png" alt="album-green-day">
-                <p class="descripcion"> CD American Idiot - Green Day </p>
-                <p class="precio"> $̶8̶0̶0̶0̶ $5000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+
+        <div class="articulos d-flex justify-content-evenly">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Punk/greenday.png" class="card-img-top" alt="album-greenday">
+                <div class="card-body">
+                    <h5 class="card-title">CD American Idiot - Green Day</h5>
+                    <p class="card-text">$̶8̶0̶0̶0̶ $5000 ARS</p>
+                    <a href="#" class="btn btn-primary color: brown">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Punk/ramones.jpg" alt="album-ramones">
-                <p class="descripcion"> CD Ramones - Ramones </p>
-                <p class="precio"> $6000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Punk/ramones.jpg" class="card-img-top" alt="album-ramones">
+                <div class="card-body">
+                    <h5 class="card-title">CD Ramones - Ramones</h5>
+                    <p class="card-text">$6000 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
         </div>
-        <!-- CDs de Grunge -->
+
+        <!-- CD's de Grunge-->
         <h2>Grunge</h2>
-        <div class="articulos">
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Grunge/nirvana.jpg" alt="album-nirvana">
-                <p class="descripcion"> CD Nervermind - Nirvana </p>
-                <p class="precio"> $̶8̶5̶0̶0̶ $5500 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+
+        <div class="articulos d-flex justify-content-evenly">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Grunge/nirvana.jpg" class="card-img-top" alt="album-nirvana">
+                <div class="card-body">
+                    <h5 class="card-title">CD Nevermind - Nirvana</h5>
+                    <p class="card-text">$̶8̶5̶0̶0̶ $5500 ARS</p>
+                    <a href="#" class="btn btn-primary color: brown">Añadir al carrito</a>
+                </div>
             </div>
 
-            <div class="articulo">
-                <img class="art-img" src="/assets/Portadas Grunge/aliceinchains.jpg" alt="album-alice-in-chains">
-                <p class="descripcion"> CD Facelift - Alice in Chains </p>
-                <p class="precio"> $7000 </p>
-                <button class="btn-art"> Agregar al carrito </button>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Grunge/aliceinchains.jpg" class="card-img-top" alt="album-ramones">
+                <div class="card-body">
+                    <h5 class="card-title">CD Facelift - Alice in Chains</h5>
+                    <p class="card-text">$7000 ARS</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
             </div>
         </div>
 
