@@ -6,7 +6,7 @@ const botonComprar = document.querySelector('carrito-comprar')
 
 function compraRealizada(){
     if(carrito.length === 0){
-        alert("No hay ningun producto en el carrito")
+        alert("No hay productos en el carrito")
     } else {
     alert("Su compra fue realizada con exito");
     vaciarCarrito()}
