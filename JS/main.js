@@ -1,7 +1,16 @@
 const Clickbutton = document.querySelectorAll('.button')
 const tbody = document.querySelector('.tbody')
 let carrito = []
+const botonComprar = document.querySelector('carrito-comprar')
 
+
+function compraRealizada(){
+    if(carrito.length === 0){
+        alert("No hay ningun producto en el carrito")
+    } else {
+    alert("Su compra fue realizada con exito");
+    vaciarCarrito()}
+}
 
 Clickbutton.forEach(btn => {
     btn.addEventListener('click', addToCarritoItem)
@@ -117,4 +126,10 @@ window.onload = function(){
         carrito = storage;
         renderCarrito()
     }
+}
+
+function vaciarCarrito(){
+    carrito.length = 0;
+    localStorage.setItem(".ItemCarrito", JSON.stringify(carrito))
+    renderCarrito();
 }

@@ -129,6 +129,8 @@ a:hover {
         border-color: #c51c1c;
     }
 
+    /*--------------PAGE CONSULTAS ------------------*/
+
     .contenedor{
         flex-direction: column;
     }
@@ -138,6 +140,11 @@ a:hover {
         height: 300px;
     }
 
+    form{
+        width: 100%!important;
+    }
+
+    
     /*------------------ CARRITO -----------------*/
 
     .carrito{
@@ -411,6 +418,11 @@ a:hover {
     .informacion{
         text-align: center;
     }
+
+    form{
+        width: 100%!important;
+    }
+
 }
 
 /*-------- MEDIA 1200px-----------*/
@@ -571,6 +583,43 @@ a:hover {
 .contenedor p{
     font-weight: 200px;
 }
+
+form{
+    width: 1000px;
+    margin: auto;
+    background: rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #c51c1c;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+
 /*----------------- PAGE RESEÑAS (SECTION) ------------------*/
 
 h1{
