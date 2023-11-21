@@ -7,8 +7,7 @@
 #
 # Uno de los cambios mas importantes con respecto a entregas anteriores es que todos los productos a la venta se encuentran en la pagina de inicio y no en otras secciones. Es decir, vinilos.html y cds.html ya no los use.
 # 
-# Tuve que hacer este cambio ya que no consegui que las funciones del carrito funcionen para 3 html distintos. La unica manera que consegui para que funcione el carrito fue que todos los productos y el propio carrito se 
-# encuentren en el mismo HTML.
+# Tuve que hacer este cambio ya que no consegui que las funciones del carrito funcionen para 3 html distintos. La unica manera que consegui para que funcione el carrito fue que todos los productos y el propio carrito se encuentren en el mismo HTML.
 #
 # Este cambio llevo a que modifique la navbar segun la pagina. En las paginas de contacto y reseñas solo tienen 3 items la lista del navbar: inicio - reseñas - contacto.
 #
