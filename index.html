@@ -9,7 +9,7 @@
 
     <!-- Mi hoja de estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 
     <!-- Fuente New Rocker-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,25 +25,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Icono del toggle -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="logo">
             <a href="#"><img src="assets/logo.png" alt="logo">Evil Vinyl Records</a>
         </div>
-
         <ul class="lista">
             <li><a href="#"> Inicio </a></li>
-            <li><a href="./pages/vinilos.html"> Vinilos </a></li>
-            <li><a href="./pages/cds.html"> CDs </a></li>
+            <li><a href="#Vinilos"> Vinilos </a></li>
+            <li><a href="#cds"> CDs </a></li>
             <li><a href="./pages/resenias.html"> Reseñas </a></li>
             <li><a href="/pages/contacto.html"> Contacto </a></li>
-            <li><a href="./pages/carrito.html">Carrito</a></li>
+            <li><a href="#carrito-seccion">Carrito</a></li>
         </ul>
     </nav>
+    
 
-    <div class="container">
+    <div class="container" id="Inicio">
 
         <h2>Ofertas de la semana</h2>
 
@@ -53,8 +56,8 @@
                 <img src="assets/Portadas Rock/gunsnroses.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Vinilo Apetite For Destruction - Guns N' Roses</h5>
-                    <p class="card-text">$̵1̵8̵0̵0̵0̵ $12000 ARS</p>
-                    <a href="#" class="btn btn-primary color: brown">Añadir al carrito</a>
+                    <p class="card-text">$<span class="precio">12000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -62,8 +65,8 @@
                 <img src="assets/Portadas Metal/metallica.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Vinilo Master Of Puppets - Metallica</h5>
-                    <p class="card-text">$̵1̵8̵0̵0̵0̵  $12000 ARS</p>
-                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    <p class="card-text">$<span class="precio">12000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -71,8 +74,8 @@
                 <img src="assets/Portadas Punk/greenday.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">CD American Idiot - Green Day</h5>
-                    <p class="card-text">$̶8̶0̶0̶0̶ $5000 ARS</p>
-                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    <p class="card-text">$<span class="precio">5000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -80,8 +83,8 @@
                 <img src="assets/Portadas Grunge/nirvana.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">CD Nevermind - Nirvana</h5>
-                    <p class="card-text">$̶8̶5̶0̶0̶ $5500 ARS</p>
-                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    <p class="card-text">$<span class="precio">5500</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -95,8 +98,8 @@
                 <img src="assets/Portadas Rock/gunsnroses.jpg" class="card-img-top" alt="album-guns-n-roses">
                 <div class="card-body">
                     <h5 class="card-title">Vinilo Apetite For Destruction - Guns N' Roses</h5>
-                    <p class="card-text">$̵1̵8̵0̵0̵0̵ $12000 ARS</p>
-                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    <p class="card-text">$<span class="precio">12000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -104,8 +107,8 @@
                 <img src="assets/Portadas Rock/thestrokes.jpeg" class="card-img-top" alt="album-the-strokes">
                 <div class="card-body">
                     <h5 class="card-title">Vinilo New Abnormal - The Strokes</h5>
-                    <p class="card-text">$14000 ARS</p>
-                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    <p class="card-text">$<span class="precio">14000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -113,8 +116,8 @@
                 <img src="assets/Portadas Rock/maneskin.jpeg" class="card-img-top" alt="album-maneskin">
                 <div class="card-body">
                     <h5 class="card-title">CD Rush! - Maneskin</h5>
-                    <p class="card-text">$8000 ARS</p>
-                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    <p class="card-text">$<span class="precio">8000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -122,8 +125,8 @@
                 <img src="assets/Portadas Metal/ghost.jpg" class="card-img-top" alt="album-ghost">
                 <div class="card-body">
                     <h5 class="card-title">Vinilo Impera - Ghost</h5>
-                    <p class="card-text">$17000 ARS</p>
-                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    <p class="card-text">$<span class="precio">17000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -131,6 +134,322 @@
 
     </div>
 
+    <!-- Seccion de Vinilos -->
+
+    <div class="container" id="Vinilos">
+        <h1 class="titulo-seccion">Vinilos</h1>
+
+        <!-- Vinilos de Rock -->
+        <h2> Rock </h2>
+
+        <div class="articulos d-flex justify-content-between">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/gunsnroses.jpg" class="card-img-top" alt="album-guns-n-roses">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Apetite For Destruction - Guns N' Roses</h5>
+                    <p class="card-text">$<span class="precio">12000</span>ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/jimihendrix.jpg" class="card-img-top" alt="album-jimi-hendrix">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Are You Experienced? - Jimi Hendrix</h5>
+                    <p class="card-text"> $<span class="precio">20000</span> ARS </p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/rollingstones.jpg" class="card-img-top" alt="album-rolling-stones">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Some Girls - The Rolling Stones</h5>
+                    <p class="card-text">$<span class="precio">20000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/thesmiths.jpg" class="card-img-top" alt="album-the-smiths">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo The Queen Is Dead - The Smiths</h5>
+                    <p class="card-text">$<span class="precio">23000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="articulos d-flex mt-4 justify-content-evenly">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/thestrokes.jpeg" class="card-img-top" alt="album-the-strokes">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo The New Abnormal - The Strokes</h5>
+                    <p class="card-text">$<span class="precio">14000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/losredondos.jpg" class="card-img-top" alt="album-los-redondos">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Oktubre - Patricio Rey y sus redonditos de ricota</h5>
+                    <p class="card-text"> $<span class="precio">23000</span> ARS </p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Vinilos de Heavy Metal -->
+
+        <h2>Heavy Metal</h2>
+
+        <div class="articulos d-flex justify-content-between">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/metallica.png" class="card-img-top" alt="album-metallica">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Master Of Puppets - Metallica</h5>
+                    <p class="card-text">$<span class="precio">12000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/ghost.jpg" class="card-img-top" alt="album-ghost">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo IMPERA - Ghost</h5>
+                    <p class="card-text">$<span class="precio">17000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/megadeth.jpg" class="card-img-top" alt="album-megadeth">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Rust In Peace - Megadeth</h5>
+                    <p class="card-text">$<span class="precio">25000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/judaspriest.jpg" class="card-img-top" alt="album-judas-priest">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Screaming for Vengeance - Judas Priest</h5>
+                    <p class="card-text">$<span class="precio">25000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Vinilos de Punk -->
+        <h2>Punk</h2>
+
+        <div class="articulos d-flex justify-content-evenly">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Punk/theclash.jpg" class="card-img-top" alt="album-the-clash">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo London Calling - The Clash</h5>
+                    <p class="card-text">$<span class="precio">24000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Punk/sexpistols.jpg" class="card-img-top" alt="album-sex-pistols">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Never Mind the Bollocks - Sex Pistols</h5>
+                    <p class="card-text">$<span class="precio">25000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Vinilos de Grunge -->
+        <h2>Grunge</h2>
+
+        <div class="articulos d-flex justify-content-evenly">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Grunge/pearljam.jpg" class="card-img-top" alt="album-the-clash">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo TEN - Pearl Jam</h5>
+                    <p class="card-text">$<span class="precio">23000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Grunge/soundgarden.jpg" class="card-img-top" alt="album-sex-pistols">
+                <div class="card-body">
+                    <h5 class="card-title">Vinilo Superunknown - Soundgarden</h5>
+                    <p class="card-text">$<span class="precio">23000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Seccion de CD's-->
+
+    <div class="container" id="cds">
+        <h1 class="titulo-seccion">CD's</h1>
+        <!-- CDs de Rock-->
+        <h2>Rock</h2>
+
+        <div class="articulos d-flex justify-content-evenly">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/oasis.jpg" class="card-img-top" alt="album-oasis">
+                <div class="card-body">
+                    <h5 class="card-title">CD Definitely Maybe - Oasis</h5>
+                    <p class="card-text">$<span class="precio">7000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Rock/maneskin.jpeg" class="card-img-top" alt="album-maneskin">
+                <div class="card-body">
+                    <h5 class="card-title">CD RUSH! - Maneskin</h5>
+                    <p class="card-text"> $<span class="precio">8000</span> ARS </p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CD's de Heavy Metal -->
+        <h2>Heavy Metal</h2>
+
+        <div class="articulos d-flex justify-content-between">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/blacksabbath.jpg" class="card-img-top" alt="album-black-sabbath">
+                <div class="card-body">
+                    <h5 class="card-title">CD Black Sabbath - Black Sabbath</h5>
+                    <p class="card-text">$<span class="precio">7000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/systemofadown.jpeg" class="card-img-top" alt="album-system-of-a-down">
+                <div class="card-body">
+                    <h5 class="card-title">CD Toxicity - System Of a Down</h5>
+                    <p class="card-text">$<span class="precio">6500</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/ironmaiden.jpg" class="card-img-top" alt="album-iron-maiden">
+                <div class="card-body">
+                    <h5 class="card-title">CD Number of the Beast - Iron Maiden</h5>
+                    <p class="card-text">$<span class="precio">8000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Metal/bringmethehorizon.jpg" class="card-img-top" alt="album-bmth">
+                <div class="card-body">
+                    <h5 class="card-title">CD POST HUMAN: SURVIVAL HORROR - Bring Me The Horizon</h5>
+                    <p class="card-text">$<span class="precio">6500</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CD's de Punk-->
+        <h2>Punk</h2>
+
+        <div class="articulos d-flex justify-content-evenly">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Punk/greenday.png" class="card-img-top" alt="album-greenday">
+                <div class="card-body">
+                    <h5 class="card-title">CD American Idiot - Green Day</h5>
+                    <p class="card-text">$<span class="precio">5000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Punk/ramones.jpg" class="card-img-top" alt="album-ramones">
+                <div class="card-body">
+                    <h5 class="card-title">CD Ramones - Ramones</h5>
+                    <p class="card-text">$<span class="precio">6000</span>ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CD's de Grunge-->
+        <h2>Grunge</h2>
+
+        <div class="articulos d-flex justify-content-evenly">
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Grunge/nirvana.jpg" class="card-img-top" alt="album-nirvana">
+                <div class="card-body">
+                    <h5 class="card-title">CD Nevermind - Nirvana</h5>
+                    <p class="card-text">$<span class="precio">5500</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Portadas Grunge/aliceinchains.jpg" class="card-img-top" alt="album-ramones">
+                <div class="card-body">
+                    <h5 class="card-title">CD Facelift - Alice in Chains</h5>
+                    <p class="card-text">$<span class="precio">7000</span> ARS</p>
+                    <button class="btn btn-primary button">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Seccion de Carrito de compras-->
+    <div id="carrito-seccion">
+    <h1 class="titulo-seccion">Carrito</h1>
+    <div class="carrito">
+        <table class="table table-hover">
+            <thead>
+                <tr class="text-primary">
+                    <th scope="col">#</th>
+                    <th scope="col">Productos</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+            
+            </tbody>
+        </table>
+        <br><br>
+        <div class="row mx-4">
+            <div class="col">
+                <h3 class="itemCartTotal">Total: 0</h3>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-success">COMPRAR</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
     <footer>
     <div class="footerContainer">
         <div class="redesSociales">
@@ -144,8 +463,8 @@
         <div class="footerNav">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/vinilos.html">Vinilos</a></li>
-                <li><a href="./pages/cds.html">CDs</a></li>
+                <li><a href="#Vinilos">Vinilos</a></li>
+                <li><a href="#cds">CDs</a></li>
                 <li><a href="./pages/resenias.html">Reseñas</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
@@ -155,12 +474,17 @@
             <p>Copyright &copy;2023; Designed by <span class="designer">Leonardo Palomino</span></p>
         </div>
     </div>
-    </footer>
+</footer>
 
+    
     <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
+        crossorigin="anonymous">
+    </script>
+
+    <script src="./JS/main.js"></script>
 
 </html>

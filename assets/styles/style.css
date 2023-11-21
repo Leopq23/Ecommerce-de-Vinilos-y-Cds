@@ -12,18 +12,24 @@ a:hover {
     text-decoration: none;
 }
 
+
 /*------------- MEDIA max-width 767px ------------*/
 
 @media (max-width:767px) {
 
     /*----------------- NAV ---------------------*/
     nav {
+        position: sticky!important;
+        top: 0px!important;
+        left: 0;
+        right: 0;
+        z-index: 999;
         display: flex;
         padding: 2px 10px;
         align-items: center;
         align-content: center;
         justify-content: space-between;
-        background: rgb(197, 28, 28);
+        background: #c51c1c;
     }
 
     nav a {
@@ -79,9 +85,23 @@ a:hover {
         cursor: pointer;
         color: white;
     }
+    
 
     /*------------ BODY -----------------------*/
+    .titulo-seccion{
+        background-color: #9a1a1a;
+        color: #fff;
+    }
 
+    .contenido{
+        flex-direction: column;
+    }
+
+    .articulos{
+        flex-direction: column;
+    }
+
+   
     h2 {
         font-family: 'Bebas Neue', sans-serif;
         font-size: 20px;
@@ -114,15 +134,145 @@ a:hover {
     }
 
     iframe{
-        width: 400px;
-        height: 200px;
+        width: 350px;
+        height: 300px;
     }
+
+    /*------------------ CARRITO -----------------*/
+
+    .carrito{
+        min-height: 40vh;
+        max-width: 450px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .table__productos{
+        display: flex;
+        flex-direction: column;
+        height: 8rem;
+    }
+    
+    .table__productos > img{
+        width: 3rem;
+        object-fit: contain;
+        border-radius: 6px;
+        margin-right: 5px;
+    }
+    
+    .table__cantidad > input{
+        width: 40px;
+        border: none;
+        outline: 0;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    /*----------FOOTER ---------------*/
+    footer {
+        margin-top: 40px;
+        background-color: rgb(197, 28, 28);
+    }
+    
+    .footerContainer {
+        padding: 70px 30px 20px;
+    }
+    
+    .redesSociales {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .redesSociales a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    
+    .redesSociales a i {
+        font-size: 32px;
+        color: rgb(197, 28, 28);
+        opacity: 0, 9;
+    }
+    
+    /*----------------- redesSociales hover -----------------*/
+    
+    .redesSociales a:hover {
+        background-color: rgb(197, 28, 28);
+        transition: 0.5s;
+    }
+    
+    .redesSociales a:hover i {
+        color: white;
+        transition: 0.5s;
+    }
+    
+    /*----------------- FOOTER NAV -----------------*/
+    
+    .footerNav {
+        margin: 30px 0px;
+    }
+    
+    .footerNav ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    
+    .footerNav ul li a {
+        font-family: 'New Rocker', cursive;
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+    
+    .footerNav ul li a:hover {
+        opacity: 1;
+    }
+    
+    /*----------------- FOOTER BOTTOM -----------------*/
+    
+    .footerBottom {
+        background-color: rgb(197, 28, 28);
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .footerBottom p {
+        font-family: 'New Rocker', cursive;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    
+    .designer {
+        font-family: 'New Rocker', cursive;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+    }
+
 }
 
 /*---------------- MEDIA 768px ---------------*/
 
 @media(min-width:768px) and (max-width:1199px) {
     nav {
+        position: sticky!important;
+        top: 0px!important;
+        left: 0;
+        right: 0;
+        z-index: 999;
         display: flex;
         padding: 5px 20px;
         align-content: center;
@@ -187,6 +337,11 @@ a:hover {
 
     /* ---------- BODY --------------*/
 
+    .titulo-seccion{
+        background-color: #9a1a1a;
+        color: #fff;
+    }
+
     h2 {
         font-family: 'Bebas Neue', sans-serif;
         font-size: 30px;
@@ -213,6 +368,35 @@ a:hover {
         background-color: #c51c1c;
         border-color: #c51c1c;
     }
+    /*------------CARRITO -------------------*/
+
+    .carrito{
+        min-height: 70vh;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .table__productos{
+        display: flex;
+    }
+    
+    .table__productos > img{
+        width: 9rem;
+        object-fit: contain;
+        border-radius: 6px;
+        margin-right: 20px;
+    }
+    
+    .table__cantidad > input{
+        width: 40px;
+        border: none;
+        outline: 0;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
 
     /*---------PAGE CONSULTAS -----------*/
     .contenedor{
@@ -233,11 +417,17 @@ a:hover {
 
 @media(min-width:1200px) {
     nav {
+        position: sticky!important;
+        top: 0px!important;
+        left: 0;
+        right: 0;
+        z-index: 1000;
         display: flex;
         padding: 5px 70px;
         align-items: center;
         justify-content: space-between;
         background: #c51c1c;
+        
     }
 
     nav a {
@@ -300,6 +490,11 @@ a:hover {
 
     /* ---------------- BODY ------------------- */
 
+    .titulo-seccion{
+        background-color: #9a1a1a;
+        color: #fff;
+    }
+
     h2 {
         font-family: 'Bebas Neue', sans-serif;
         font-size: 40px;
@@ -325,6 +520,34 @@ a:hover {
     .btn-primary:focus{
         background-color: #c51c1c;
         border-color: #c51c1c;
+    }
+/*------------------------- CARRITO --------------------------------------*/
+    .carrito{
+        min-height: 70vh;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .table__productos{
+        display: flex;
+    }
+    
+    .table__productos > img{
+        width: 9rem;
+        object-fit: contain;
+        border-radius: 6px;
+        margin-right: 20px;
+    }
+    
+    .table__cantidad > input{
+        width: 40px;
+        border: none;
+        outline: 0;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 30px;
+        margin-bottom: 20px;
     }
 
 }
@@ -418,12 +641,6 @@ h1{
 }
 
 
-@media screen and (max-width:768px){
-    .contenido{
-        flex-direction: column;
-    }
-}
-
 /*----------------- FOOTER ----------------- */
 
 footer {
@@ -515,3 +732,6 @@ footer {
     font-weight: 400;
     margin: 0px 5px;
 }
+
+/*-------------------- CARRITO ----------------------------*/
+
