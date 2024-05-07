@@ -19,11 +19,6 @@ a:hover {
 
     /*----------------- NAV ---------------------*/
     nav {
-        position: sticky!important;
-        top: 0px!important;
-        left: 0;
-        right: 0;
-        z-index: 999;
         display: flex;
         padding: 2px 10px;
         align-items: center;
@@ -275,11 +270,6 @@ a:hover {
 
 @media(min-width:768px) and (max-width:1199px) {
     nav {
-        position: sticky!important;
-        top: 0px!important;
-        left: 0;
-        right: 0;
-        z-index: 999;
         display: flex;
         padding: 5px 20px;
         align-content: center;
@@ -429,11 +419,6 @@ a:hover {
 
 @media(min-width:1200px) {
     nav {
-        position: sticky!important;
-        top: 0px!important;
-        left: 0;
-        right: 0;
-        z-index: 1000;
         display: flex;
         padding: 5px 70px;
         align-items: center;
@@ -501,6 +486,7 @@ a:hover {
     }
 
     /* ---------------- BODY ------------------- */
+
 
     .titulo-seccion{
         background-color: #9a1a1a;
