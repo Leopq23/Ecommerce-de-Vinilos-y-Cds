@@ -14,8 +14,7 @@ Para hacer esta pagina me inspire en mi pasión por la música y las ganas de co
 #
 # ✍ Reseñas: En esta sección, se visualizan cards con distintas reseñas de álbumes. Cada card contiene una imagen con el álbum a reseñar junto con el artista que realiza la critica y abajo de cada imagen la reseña de dicho álbum.
 #
-# 📞 Contacto: En esta sección, se visualiza el lugar de la tienda a través del iframe de Google Maps. También se puede ver la dirección del lugar junto con el horario de atención y las distintas redes sociales de la tienda. Por ultimo, al final de la pagina hay
-# un formulario donde se podrá realizar una consulta con mas detalle.
+# 📞 Contacto: En esta sección, se visualiza el lugar de la tienda a través del iframe de Google Maps. También se puede ver la dirección del lugar junto con el horario de atención y las distintas redes sociales de la tienda. Por ultimo, al final de la pagina hay un formulario donde se podrá realizar una consulta con mas detalle.
 # 
 # 🛒 Carrito: Esta sección solo esta disponible para ser accedida solo en las secciones: Inicio, Vinilos y CD's. Al hacer click, se llevara al usuario hacia el final de la pagina donde se podrán observar todos los productos agregados al carrito de la respectiva sección en la que este y para su posterior compra. 
 #
